@@ -1,7 +1,14 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include<time.h>
+#include <stdlib.h>
+#include <time.h>
 
-int main(){
+char *s rand_string(int size){
     
+    char letters[] = "abcdefghijklmnopqrstuvwqyz";
+
+    for (size_t i = 0; i < siz; i++){
+
+    }
+
+    return NULL;
 }
