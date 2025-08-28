@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-
+#include "random.h" //need this so that the 2 files can communicate with each other
 
 // random string generator wrapper function
 char* rand_string_alloc(size_t size)
@@ -17,16 +16,15 @@ char* rand_string_alloc(size_t size)
 
 
 int main()
-
 {
     char *str;
     size_t size = 5;  //specify a value for size of word
 
 	/* seed the randomizer */
-	srand( (unsigned)time(NULL) );
+	srand((unsigned)time(NULL) );
 
 	printf("Today's random word: ");
-    str = rand_string_alloc(size );
+    str = rand_string_alloc(size);
     printf("%s",str);
     free (str);
     
