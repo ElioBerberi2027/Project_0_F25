@@ -21,7 +21,7 @@ int main()
     size_t size = 5;  //specify a value for size of word
 
 	/* seed the randomizer */
-	srand((unsigned)time(NULL) );
+	srand((unsigned)time(NULL));
 
 	printf("Today's random word: ");
     str = rand_string_alloc(size);
